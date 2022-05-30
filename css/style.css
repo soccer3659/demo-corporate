@@ -1,0 +1,564 @@
+/*mobile-firstで作成*/
+
+/* common 
+-----------------------------------------------------*/
+
+body {
+    color: #555;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+backgroundody {
+    color: #555;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    
+}
+
+h1 {
+    font-size: 20px;
+    color:#555;
+}
+
+header,
+h2 {
+    font-family: 'Sawarabi Mincho', 'Yu Mincho', sans-serif;
+}
+
+p, td {
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color:#555;
+}
+
+ul {
+    list-style:none;
+}
+
+/* Table */
+table {
+    margin: 3.5rem 0;
+    width: 100%;
+    border-spacing: 0;
+}
+
+th,
+td {
+    display: block;
+}
+
+th {
+    font-weight: normal;
+    background: #f8f6f2;
+    vertical-align: middle;
+    padding: 1rem;
+    text-align: left;
+}
+
+td {
+    padding: .75rem 1rem 1.75rem;
+}
+
+/* hero
+-----------------------------------------------------*/
+.home-hero {
+    background: url('../img/hero.jpg')  no-repeat right top / 70vw auto ;
+    padding: 5.5rem 1rem 3rem;
+}
+
+.home-hero h2 {
+    font-family: 'Sawarabi Mincho', 'Yu Mincho', sans-serif;
+    font-size: 1.5rem;
+    margin: 8vw 0 12vw;
+    background: rgba(255,255,255,.8);
+    padding: 1rem;
+    display: inline-block;
+}
+
+.home-hero p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    background: rgba(255,255,255,.8);
+}
+
+
+.btn {
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+    background: #000080;
+    font-family: 'Sawarabi Mincho', 'Yu Mincho', sans-serif;
+    padding: 1.25rem 3.25rem;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background: #3a7edf;
+}
+
+
+/* header
+-------------------------------------------------------------*/
+
+header .wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.main-nav li {
+    text-align: center;
+    
+    font-size: .75rem;
+}
+
+.main-nav a {
+    display: block;
+    color:#555;
+    width: 4rem;
+    padding: .5rem;
+}
+
+.main-nav a::before {
+    display: block;
+    margin-bottom: .25rem;
+/* Font Awesome */
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    color: #555;
+    font-size: 1.25rem;
+}
+
+.home::before {
+    content: '\f015';
+}
+.job::before {
+    content: '\f0ca';
+}
+.form::before {
+    content: '\f56e';
+}
+
+.main-nav .current {
+    background: #f8f6f2;
+}
+
+/* bg-brown
+--------------------------------------------------------------*/
+.bg-brown {
+    background: #f8f6f2;
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+    /*　グラフの文字 */
+    .ct-label {
+        font-size: 1rem;
+        fill: #fff
+    }
+    /*　円グラフ */
+    .ct-series-a .ct-slice-pie {
+        fill: #2d3374; 
+    }
+    .ct-series-b .ct-slice-pie {
+        fill: #3a7edf; 
+    }
+    .ct-series-c .ct-slice-pie {
+        fill: #9bcbf8; 
+    }
+    .ct-series-d .ct-slice-pie {
+        fill: #bbb; 
+    }
+    
+   
+    .home-chart {
+      width: 400px;
+      margin: 10px auto 0;
+    }
+    
+    .title::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 10rem;
+    background: #d0bea2;
+    margin: 2rem 0 2.5rem;
+}
+    
+/* content
+--------------------------------------------------------------*/
+
+   /*　棒グラフ　*/
+   .ct-series-a .ct-bar {
+       stroke: #3a7edf;
+   }
+
+   .ct-bar {
+       stroke-width: 16%;
+   }
+
+   .home-chart p {
+       text-align: center;
+   }
+
+/* footer
+-------------------------------------------------------------------*/
+footer {
+    background: #000080;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.btn-second {
+    display:inline-block;
+    text-decoration: none;
+    color: #555;
+    background: #d0bea2;
+    font-family: 'Sawarabi Mincho', 'Yu Mincho', sans-serif;
+    padding: 1.25rem 3.25rem;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+    margin-bottom: 3rem;
+}
+
+.btn-second:hover {
+    background: #FFE4C4;
+}
+
+.footer-nav li {
+    margin-bottom: 1rem;
+}
+
+.footer-nav a{
+    color: rgba(255,255,255,.8);
+}
+
+.footer-nav a:hover{
+    color: #fff;
+}
+
+/* job.html
+===================================================================*/
+.job-page {
+    background: url('../img/job.jpg')  no-repeat left 114px / 70vw auto ;
+    margin: 0;
+}
+
+.job-hero {
+    margin: 5rem auto;
+    padding: 5rem 3rem;
+    width:94%;
+    max-width:900px;
+    background:white;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
+
+.title-center{
+    text-align: center;
+}
+
+.title-center::after {
+    margin: 2rem auto;
+}
+
+.btn-text {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+.timeline {
+    list-style: decimal inside;
+    font-family: 'Sawarabi Mincho', sans-serif;
+} 
+
+.timeline-item {
+    margin-bottom: 2rem;
+}
+
+.timeline-title {
+    font-size: 1.375rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.timeline-content {
+    font-family: sans-serif;
+}
+
+
+/* form html
+===================================================================*/
+
+.form-page {
+    background: url('../img/form.jpg')  no-repeat right 114px / 70vw auto ;
+    margin: 0;
+}
+
+
+/* form*/
+input[type='text'],
+input[type='email'],
+input[type='url'],
+select,
+textarea {
+    border: 1px solid #bbb;
+    background: #fff;
+    padding: .5rem;
+    width: 100%;
+}
+
+input[type='text']::placeholder,
+input[type='email']::placeholder,
+input[type='url']::placeholder,
+textarea::placeholder {
+    color: #bbb;
+}
+
+textarea {
+    height: 10rem;
+}
+
+form p {
+    text-align: center;
+}
+
+.select-box {
+    position :relative;
+}
+
+.select-box::after {
+    display: inline-block;
+    position:absolute;
+    top:.625rem;
+    right:1rem;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    content: '\f078';
+    color:#bbb;
+}
+
+/*　デフォルトのチェックボックスを非表示にする */
+input[type="checkbox"] {
+    opacity: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+}
+
+/*チェックボックス用の四角形を作る */
+input[type='checkbox'] + span::before {
+    display:inline-block;
+    content:'';
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #bbb;
+    background: #fff;
+    margin: -.125rem .5rem 0 0;
+    vertical-align:middle;
+    
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    padding: 0 2px;
+    line-height: 1.5;
+}
+
+/* チェックが入るとチェックアイコンを表示*/
+input[type='checkboX']:checked + span::before {
+    content: '\f00c';
+}
+
+
+
+
+
+
+
+
+
+
+/* desktop
+===================================================================*/
+
+
+@media (min-width:600px) {
+/* commmon */
+   
+   h1{
+       font-size: 30px;
+   }
+   
+   .title {
+    font-size: 1.875rem;
+    }
+    
+    .btn {
+        width: auto;
+    }
+    
+      /* contentと共通 */
+    .home-text {
+        width: 700px;
+    }
+    
+    
+/* table */
+   
+   th,
+   td {
+       padding: 1.25rem;
+       display:table-cell;
+   }
+   
+   th {
+       width: 24%;
+       text-align: left;
+   }
+   
+   tr:nth-child(odd) {
+       background: #f8f6f2;
+   }
+   
+   tr:nth-child(even) th{
+       background: #fff;
+   }
+   
+   
+   
+/* header */
+   
+    .main-nav li {
+        font-size: 1.3rem;
+        margin-left: 2rem;
+        font-family: 'Sawarabi Mincho', 'Yu Mincho', sans-serif;
+        
+    }
+    
+    .main-nav .current,
+    .main-nav a:hover {
+        border-bottom: solid 2px  #000080;
+        padding: 5px;
+        background: none;
+    }
+    
+    .main-nav a {
+        padding: 5px;
+        width: auto;
+    }
+    
+     .main-nav a::before {
+         display: none;
+    }
+    
+    
+/* hero*/
+    
+    .home-hero {
+        padding: 16vw 1rem;
+    }
+    .home-hero h2 {
+        font-size: 2.5rem;
+        margin: 0 0 2rem;
+        padding: 0;
+    }
+    .home-hero p {
+        width: 38vw;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 1rem;
+        gap:1.5rem;
+    }
+
+
+/* timeline */
+    .timeline-item {
+        display: flex;
+        margin-bottom: 0;
+    }
+    
+    .timeline-title {
+        flex: 1;
+        padding: 2rem 2.5rem 2rem 0;
+        text-align: right;
+    }
+    
+    .timeline-content {
+        border-left: 5px solid #f8f6f2;
+        flex: 4;
+        padding: 1.5rem 0 1.5rem 2.5rem;
+        position:relative;
+    }
+    
+    .timeline-content::before {
+    display: block;
+    width: 2.25rem;
+    height: 2.25rem;
+    background: #d0bea2;
+    text-align: center;
+    padding: 0.1rem;
+    position: absolute;
+    top: 1.5rem;
+    left: -1.5rem;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    color: #fff;
+    font-size: 1.25rem;
+}
+    
+    
+    .icon-file::before {
+    content: '\f56e';
+}
+    .icon-code::before {
+        content: '\f121';
+    }
+    .icon-chat::before {
+        content: '\f086';
+    }
+    .icon-hands::before {
+        content: '\f2b5';
+    }
+    
+/* form */
+
+.select-box {
+    width: 40%;
+}
+    
+/* footer */
+ 
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-nav li {
+        margin: 0 10px;
+    }
+
+
+}
